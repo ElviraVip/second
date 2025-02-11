@@ -10,7 +10,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-  workflow_dispatch:
 
 jobs:
   build:
@@ -39,7 +38,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.пш
-   deploy_on_prod:
+  deploy_on_prod:
     runs-on: ubuntu-latest
 
     steps:
